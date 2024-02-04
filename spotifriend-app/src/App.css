@@ -1,38 +1,69 @@
-.App {
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(41, 36, 36);
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #1DB954;
   text-align: center;
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2, h3 {
+  color: #191414;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between; /* Items will be spaced evenly */
 }
 
-.App-link {
-  color: #61dafb;
+.container > div {
+  width: calc(50% - 10px); /* Set width to 50% of the container width */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div {
+  background-color: #f0f2f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Style for artist names and track details */
+li {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Custom style for links */
+a {
+  color: #1DB954;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
